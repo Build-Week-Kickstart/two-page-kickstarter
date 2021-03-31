@@ -13,13 +13,13 @@ requests = "*"
 
 [packages]
 fastapi = "*"
-pandas = "*"
 scikit-learn = "*"
 plotly = "*"
 sqlalchemy = "*"
 uvicorn = {extras = ["standard"], version = "*"}
 joblib = "*"
 category-encoders = "*"
+pandas = "==1.1.5"
 
 [requires]
 python_version = "3"
