@@ -35,7 +35,7 @@ class Item(BaseModel):
     #     return value
 
 
-@router.post("/predict")
+@router.get("/predict")
 async def predict(item: Item):
     """
     Make random baseline predictions for classification problem 🔮.
