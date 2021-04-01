@@ -22,12 +22,34 @@ app = FastAPI(
 
 app.include_router(ml.router, tags=['Machine Learning'])
 
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=['*'],
+#     allow_credentials=True,
+#     allow_methods=['POST', 'PUT'],
+#     allow_headers=['*'],
+# )
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=['*'],
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=['POST', 'PUT'],
-    allow_headers=['*'],
+    allow_methods=["POST", "GET", "OPTIONS", "DELETE", "PUT"],
+    allow_headers=[
+        "Access-Control-Allow-Headers",
+        "Origin",
+        "Accept",
+        "X-Requested-With",
+        "Content-Type",
+        "Access-Control-Request-Method",
+        "Access-Control-Request-Headers",
+        "Access-Control-Allow-Origin",
+        "Access-Control-Allow-Methods"
+        "Authorization",
+        "X-Amz-Date",
+        "X-Api-Key",
+        "X-Amz-Security-Token"
+    ]
 )
 
 if __name__ == '__main__':
