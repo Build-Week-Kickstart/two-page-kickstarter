@@ -19,7 +19,7 @@ class Item(BaseModel):
     """Use this data model to parse the request body JSON."""
 
     category: str = Field(..., example="Food")
-    main_category: str = Field(..., example="Drink")
+    main_category: str = Field(..., example="Food")
     backers: int = Field(..., example=25)
     usd_goal_real: float = Field(..., example=5000.00)
     ks_length: int = Field(..., example=60)
@@ -35,13 +35,12 @@ class Item(BaseModel):
     #     return value
 
 
-@router.get("/predict")
+@router.post("/predict")
 async def predict(item: Item):
     """
     Make random baseline predictions for classification problem 🔮.
 
     ### Request Body
-
     - `category`: Select a category ['3D Printing', 'Academic', 'Accessories', 'Action', 'Animals', 'Animation', 'Anthologies', 
         'Apparel', 'Apps', 'Architecture', 'Art', 'Art Books', 'Audio', 'Bacon', 
         'Blues', 'Calendars', 'Camera Equipment', 'Candles', 'Ceramics', 'Childrens Books', 'Childrenswear', 
@@ -65,7 +64,7 @@ async def predict(item: Item):
         'Theater', 'Thrillers', 'Translations', 'Typography', 'Vegan', 'Video', 'Video Art', 
         'Video Games', 'Wearables', 'Weaving', 'Web', 'Webcomics', 'Webseries', 'Woodworking', 
         'Workshops', 'World Music', 'Young Adult', 'Zines']
-​
+
     - `main_category`: Select a main category ['Art', 'Comics', 'Crafts', 'Dance', 'Design', 'Fashion', 'Film & Video', 
         'Food', 'Games', 'Journalism', 'Music', 'Photography', 'Publishing', 'Technology', 'Theater']
 
