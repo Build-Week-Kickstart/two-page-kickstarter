@@ -38,7 +38,7 @@ class Item(BaseModel):
 @router.post("/predict")
 async def predict(item: Item):
     """
-    Make random baseline predictions for classification problem 🎱.
+    Determine the liklihood of success for a proposed Kickstarter campaign 🔮.
 
     ### Request Body
     - `category`: Select a category ['3D Printing', 'Academic', 'Accessories', 'Action', 'Animals', 'Animation', 'Anthologies', 
