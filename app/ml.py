@@ -19,7 +19,7 @@ class Item(BaseModel):
     """Use this data model to parse the request body JSON."""
 
     category: str = Field(..., example="Food")
-    main_category: str = Field(..., example="Food")
+    main_category: str = Field(..., example="Drink")
     backers: int = Field(..., example=25)
     usd_goal_real: float = Field(..., example=5000.00)
     ks_length: int = Field(..., example=60)
@@ -38,7 +38,7 @@ class Item(BaseModel):
 @router.post("/predict")
 async def predict(item: Item):
     """
-    Make random baseline predictions for classification problem 🔮.
+    Make random baseline predictions for classification problem 🎱.
 
     ### Request Body
     - `category`: Select a category ['3D Printing', 'Academic', 'Accessories', 'Action', 'Animals', 'Animation', 'Anthologies', 
