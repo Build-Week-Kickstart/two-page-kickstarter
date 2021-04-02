@@ -5,12 +5,18 @@ import uvicorn
 from app import ml
 
 description = """
-The Kickstarter-Success-Predictor application deploys data science 
-to indicates the liklihood of success for proposed Kickstarter campaigns.
-
+Do you have an idea that you are pretty sure will make you money? Do you believe you can get
+gain support of this idea? Or are you worried your idea won't be successful to gain support?
+The Kickstarter Success Predictor application deploys data science 
+to indicates the liklihood of success for proposed Kickstarter campaigns. Entering the predicitive
+parameters of type of idea, financial goal, and how long you need to gain backers, and our predictions,
+with %92 accuracy, will tell you if you will be successful or not.
+\n
 <img src="https://miro.medium.com/max/4638/1*nOdS52xlJh2n8T2Wu0UbKg.jpeg"
 width="40%" />
-
+\n
+\n
+An app created by: Lambda Students - Frank Howd, Bryan Conn, and Azamat Jalilov - DS24
 """
 
 app = FastAPI(
