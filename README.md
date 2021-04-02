@@ -13,3 +13,5 @@ Input your proposeed campaign's -
 
 The Kickstart-Success-Predictor will indicate the campaign's prospects at success!
 Try it out!
+
+https://kickstarterdsbw.herokuapp.com/
