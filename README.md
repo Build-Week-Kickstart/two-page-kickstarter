@@ -1,6 +1,6 @@
 # two-page-kickstarter
 
-The Kickstarter-Success-Predictor application deploys data science to indicates the liklihood of success for proposed Kickstarter campaigns.
+The Kickstarter-Success-Predictor application deploys data science to indicates the likelihood of success for proposed Kickstarter campaigns.
 
 Determine the likelihood of success for a proposed Kickstarter campaign using machine learning!
 
