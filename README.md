@@ -1,4 +1,4 @@
-# two-page-kickstarter
+# Kickstarter-Success-Predictor
 
 The Kickstarter-Success-Predictor application deploys data science to indicates the likelihood of success for proposed Kickstarter campaigns.
 
